@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "Student Query",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "career_mentor_agent",
+      "type": "Agent",
+      "label": "Career Mentor Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Mentor Response",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_node",
+      "target": "career_mentor_agent"
+    },
+    {
+      "source": "career_mentor_agent",
+      "target": "output_node"
+    }
+  ],
+  "agents": [
+    {
+      "node_id": "career_mentor_agent",
+      "agent_id": "699a7731d5e86513c94d3144",
+      "name": "Career Mentor Agent",
+      "description": "A comprehensive career guidance mentor for Indian students who have completed 10th or 12th grade. Provides personalized advice on stream selection, career mapping, entrance exams, skill roadmaps, salary expectations, resource recommendations, career comparisons, and actionable short/mid/long-term plans. Adapts tone for students (friendly, encouraging) and parents (professional, data-driven).",
+      "provider": "Google",
+      "model": "gemini-2.5-pro",
+      "temperature": 0.5,
+      "top_p": 0.95,
+      "capabilities": {
+        "image_output": false,
+        "voice": false,
+        "file_output": false,
+        "knowledge_base": false
+      },
+      "response_schema": {
+        "result": {
+          "message": "string",
+          "suggested_prompts": ["string"]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "agent_name": "Career Mentor Agent",
+  "agent_id": "699a7731d5e86513c94d3144",
+  "description": "A comprehensive career guidance mentor for Indian students who have completed 10th or 12th grade. Provides personalized advice on stream selection, career mapping, entrance exams, skill roadmaps, salary expectations, resource recommendations, career comparisons, and actionable short/mid/long-term plans. Adapts tone for students (friendly, encouraging) and parents (professional, data-driven).",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "result": {
+      "message": "string",
+      "suggested_prompts": [
+        "string"
+      ]
+    }
+  },
+  "example_response": {
+    "result": {
+      "message": "The mentor's full response in markdown format covering career guidance, advice, comparisons, or roadmaps as appropriate",
+      "suggested_prompts": [
+        "sample string"
+      ]
+    }
+  }
+}

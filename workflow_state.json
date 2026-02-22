@@ -1,0 +1,22 @@
+{
+  "agents": {
+    "career_mentor_agent": {
+      "agent_id": "699a7731d5e86513c94d3144",
+      "name": "Career Mentor Agent",
+      "provider": "Google",
+      "model": "gemini-2.5-pro",
+      "temperature": 0.5,
+      "top_p": 0.95,
+      "capabilities": {
+        "image_output": false,
+        "voice": false,
+        "file_output": false,
+        "knowledge_base": false
+      }
+    }
+  },
+  "rag_ids": {},
+  "schedules": {},
+  "workflow_pattern": "single_agent",
+  "primary_agent_id": "699a7731d5e86513c94d3144"
+}
